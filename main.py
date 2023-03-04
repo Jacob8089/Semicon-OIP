@@ -19,6 +19,3 @@ def sv():
     sv_val=variance()**0.5
     return round(sv_val,4)
 
-print(mean())
-print(variance())
-print(sv())
