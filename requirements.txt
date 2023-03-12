@@ -1,0 +1,19 @@
+matplotlib.image
+matplotlib.pyplot
+numpy
+cipy.signal
+glob
+scipy import optimize
+warnings
+warnings.filterwarnings('ignore')
+csv
+numpy.linalg 
+scipy.optimize 
+mpl_toolkits.mplot3d
+random
+matplotlib
+sympy
+pyswarm
+tabulate
+flet
+customtkinter

@@ -1,40 +1,5 @@
-## An application focusing on calculating the total deposition 
-##        of dopants on a semiconductor material
-## By uploading the microscopinc images and specifying the 
-##        incubation cycle, the application calculates the necessary
-##        parameter and the user is able to fuse the parameters to 
-##        inbuilt fuctions.
-## The next version development focuses on live feeding of from
-##        microscopic video files in claculating the parameters.
-
 import flet as ft
 from flet import *
-import time
-
-class Main(UserControl):
-    def __init__(self):
-        pass
-    def run(self):
-        pass
-
-
-class Functionalities(Main):
-    def __init__(self):
-        super().__init__()
-        pass
-    def build(self):
-        pass
-
-class Animation(Main):
-    def __init__(self):
-        pass
-    def build(self):
-        pass
-
-class App():
-    def __init__(self):
-        super().__init__()
-
 
 def main(page: ft.page):
     
