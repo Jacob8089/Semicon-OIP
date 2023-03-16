@@ -7,18 +7,19 @@ def main(page: ft.page):
     page.title="SemiCon-OIP  v.1.0"
     page.padding=0
     page.window_maximized=True
+    page.window_min_width= 700
     page.window_center()
     page.update()
 
     ##Home Page<begin>
     ##<toolbar>
     c1=ft.Column(expand=0,controls=[
-                ft.Container(width=1400,height=40, bgcolor='#0D0618', padding=padding.only(top=15,left=5),content=
+                ft.Container(width=1400,height=40, bgcolor='#0D0618', padding=padding.only(top=5,left=5),content=
                              ft.Row(expand=0, alignment=ft.MainAxisAlignment.START,controls=[
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("File",size=11),on_click=lambda e: print("File")),
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("Edit",size=11),on_click=lambda e: print("Edit")),
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("View",size=11),on_click=lambda e: print("View")),
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("Settings",size=11),on_click=lambda e: print("Settings")),
+                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("File",size=11),on_click=lambda e: print("File"),),
+                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("Edit",size=11),on_click=lambda e: print("Edit"),),
+                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("View",size=11),on_click=lambda e: print("View"),),
+                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("Settings",size=11),on_click=lambda e: print("Settings"),),
                                 
                              ])),
     ])

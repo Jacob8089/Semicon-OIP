@@ -10,6 +10,7 @@
 import flet as ft
 from flet import *
 import time
+from lib import *
 
 class Main(UserControl):
     def __init__(self):
