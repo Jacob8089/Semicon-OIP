@@ -13,19 +13,26 @@ def main(page: ft.page):
 
     ##Home Page<begin>
     ##<toolbar>
-    c1=ft.Column(expand=0,controls=[
-                ft.Container(width=1400,height=40, bgcolor='#0D0618', padding=padding.only(top=5,left=5),content=
-                             ft.Row(expand=0, alignment=ft.MainAxisAlignment.START,controls=[
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("File",size=11),on_click=lambda e: print("File"),),
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("Edit",size=11),on_click=lambda e: print("Edit"),),
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("View",size=11),on_click=lambda e: print("View"),),
-                                ft.Container(expand=0,padding= padding.only(left=15),content=ft.Text("Settings",size=11),on_click=lambda e: print("Settings"),),
-                                
-                             ])),
-    ])
+    page.appbar = ft.AppBar(
+        leading_width=40,
+        center_title=False,
+        bgcolor='#111122',
+        actions=[
+            ft.PopupMenuButton(
+                items=[
+                    ft.PopupMenuItem(text="Settings"),
+                    ft.PopupMenuItem(),  # divider
+                    ft.PopupMenuItem(
+                        text="Checked item", checked=False,
+                    ),
+                ]
+            ),
+        ],
+    )
+
     ##<main_region>
     r1=ft.Row(expand=1, controls=[
-            ft.Container(expand=0,width=860,height=1100, padding= padding.only(top=50,left=50),bgcolor='#111122',content=
+            ft.Container(expand=0,width=860,height=1100, padding= padding.only(top=75,left=50),bgcolor='#111122',content=
                     ft.Column(controls=[
                     ft.Text("Get Started,", color='#FFFFFF', size=35,font_family="Roboto", weight=ft.FontWeight.NORMAL, selectable=False),
                     ft.Text("Start with a new project or carry on with your previous.", color='#9B9B9B', size=17,font_family="Roboto", weight=ft.FontWeight.NORMAL, selectable=False),
@@ -37,11 +44,12 @@ def main(page: ft.page):
          ])         
             ]
             )),
+            
     ##Right Side Image
             ft.Container(expand=1,width=565,height=1100,image_src='C://Users//jacob//Documents//Python//Semicon-OIP//assets//img//home_image.png',
                         image_fit=ImageFit.COVER)
     ])
-    page.add(c1,r1)
+    page.add(r1)
     ##Home Page<end>
 
 ft.app(target=main)
