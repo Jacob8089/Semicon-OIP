@@ -3,19 +3,21 @@ from flet import *
 import time
 
 
-def main(splash_page: ft.page):
+def main(page: ft.page):
 
     def toHome(e):
-        splash_page.window_destroy()
+        page.window_visible=False
+        page.update()
+        print("Intiated")
     
-    splash_page.window_width=500
-    splash_page.window_height=350
-    splash_page.bgcolor='#050518'
-    splash_page.title="SemiCon-OIP  v.1.0"
-    splash_page.window_center()
-    splash_page.padding=0
-    splash_page.window_frameless=True
-    splash_page.update()
+    page.window_width=500
+    page.window_height=350
+    page.bgcolor='#050518'
+    page.title="SemiCon-OIP  v.1.0"
+    page.window_center()
+    page.padding=0
+    page.window_frameless=True
+    page.update()
 
 
     app_name=ft.Text("Semicon - OIP", color='#FFFFFF', style=ft.TextThemeStyle.DISPLAY_SMALL, weight=ft.FontWeight.BOLD, selectable=False)
@@ -36,7 +38,7 @@ def main(splash_page: ft.page):
                                             ft.Column(expand=True, alignment=ft.MainAxisAlignment.START, controls=[start_bt]),)
                         ]))
     ])
-    splash_page.add(c1)
+    page.add(c1)
     #Splash Screen Design<end>
 
 ft.app(target=main,assets_dir='assets')

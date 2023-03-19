@@ -21,10 +21,6 @@ def main(page: ft.page):
             ft.PopupMenuButton(
                 items=[
                     ft.PopupMenuItem(text="Settings"),
-                    ft.PopupMenuItem(),  # divider
-                    ft.PopupMenuItem(
-                        text="Checked item", checked=False,
-                    ),
                 ]
             ),
         ],

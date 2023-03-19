@@ -1,0 +1,22 @@
+Document prepared on 19/03/2023 at 22:13 CET
+
+**Release log on version 1.0**
+
+NEW
+> Using image processing  to automatically determine the surface coverage (how much surface area (in %)) 
+is covered by the DPP molecules. 
+
+> To strengthen results, mitigate over all pictures provided for each test case (percentage, deposition time) 
+and create error bars (median, mean, standard deviation) for each “measurements”. 
+
+> The application automatically adds the calculating algorithm and plot resulting data in a joint graph, 
+showing surface coverage [%] over deposition time.
+
+> Current version supports on Avrami equation specifically used for the wafer ncubation that describes how solids 
+transform from one phase to another at constant temperature.
+
+> In the canvas, the adjust parameter is not yet supported or added that the user might need to fit the image size of 
+512*512 accurately but the application also sclaes on the uploaded image.
+
+> Group selection of images will be added in v.1.1
+

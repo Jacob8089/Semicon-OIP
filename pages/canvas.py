@@ -3,8 +3,7 @@ from flet import *
 import time
 
 def main(page: ft.page):
-    
-    
+     
     page.bgcolor='#070011'
     page.title="SemiCon-OIP  v.1.0"
     page.padding=0
@@ -14,7 +13,6 @@ def main(page: ft.page):
     page.window_center()
     page.update()
 
-
     ##Image Option<begin>
     ##<toolbar>
     page.appbar = ft.AppBar(
@@ -23,11 +21,12 @@ def main(page: ft.page):
         actions=[
             ft.PopupMenuButton(
                 items=[
-                    ft.PopupMenuItem(text="Item 1"),
+                    ft.PopupMenuItem(text="New/Open", on_click=lambda e: print("Record")),
+                    ft.PopupMenuItem(text="Save/Save as", on_click=lambda e: print("Record")),
+                    ft.PopupMenuItem(text="Export", on_click=lambda e: print("Record")),
+                    ft.PopupMenuItem(text="Print", on_click=lambda e: print("Record")),
                     ft.PopupMenuItem(),  # divider
-                    ft.PopupMenuItem(
-                        text="Checked item", checked=False,
-                    ),
+                    ft.PopupMenuItem(text="Exit now",on_click= lambda e: page.window_destroy()),
                 ]
             ),
         ],
@@ -79,7 +78,11 @@ def main(page: ft.page):
                     content=ft.Column(expand=0, controls=[
                             ft.Text("The uploaded files are,"),
                             ft.Divider(height=0.25, color="#8E8E8E"),
-                            ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
+                            ft.ListView(expand=1, padding=padding.only(left=5,right=5,top=10),first_item_prototype=True,
+                                        divider_thickness=0.5,spacing=10, auto_scroll=True,controls=[
+                                    ft.TextButton(content=ft.Row(controls=[ft.Icon(ft.icons.ALBUM),ft.Text("Sample_5%_incubation.png")])
+                                        ,)
+                            ])
         
                     ])
                 ),
@@ -88,7 +91,7 @@ def main(page: ft.page):
                 text="Process",
                 content=ft.Container(
                     padding=padding.only(top=20,left=15),
-                    content=ft.Column(expand=0, controls=[
+                    content=ft.Column(expand=0, visible=True,controls=[
                             ft.Text("The image processing techniques in order to calculate the total surface coverage area of the dopants present over the semiconducter wafer material undergoing incubation."),
                             ft.Divider(height=0.25, color="#8E8E8E"),
                             ft.Text("Threashold"),
@@ -109,7 +112,7 @@ def main(page: ft.page):
                     content=ft.Column(controls=[ft.Text("Here you can mathematically analyze on your methodolgy you chose for the optimization."),
                                                 ft.Divider(height=0.25, color="#8E8E8E"),
                                                 ft.TextField(label="Functional Analysis", autofocus=True,value="import lib",
-                                                             color='#FFDE88',border_color='Blue',multiline=True),
+                                                             color='#FFDE88',border_color='Blue',multiline=True,max_length=500),
                                                 ft.FilledButton("Save method", icon=icons.DOWNLOADING)
                     ])
                 ),

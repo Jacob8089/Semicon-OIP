@@ -3,7 +3,7 @@ matplotlib.pyplot
 numpy
 cipy.signal
 glob
-scipy import optimize
+scipy 
 warnings
 warnings.filterwarnings('ignore')
 csv
