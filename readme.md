@@ -11,7 +11,7 @@
 
 > By uploading the microscopinc images and specifying the incubation cycle, the application calculates the necessary parameter and the user is able to fuse the parameters to inbuilt fuctionswhich acts as the plugin.
 
-https://user-images.githubusercontent.com/65939087/226213991-e719ef68-9003-4d0b-bd6e-4a39283b53fb.png
+![Semicon-Basic-BD](https://user-images.githubusercontent.com/65939087/226215919-b5d47188-bfab-46de-a329-3cd6a86d14f8.png)
 
 > Current version features will be updated regularly on the release log.
 
@@ -20,13 +20,13 @@ with more optimization techniques.
 
 **Splash Page**
 
-https://user-images.githubusercontent.com/65939087/226211757-cd89dd61-b645-4200-a7f5-6d46d6d86e39.png
+![Semicon-splash](https://user-images.githubusercontent.com/65939087/226215971-604df9c2-86e3-423c-ad47-2ff6f86e66ff.png)
 
 ### The user is welcomed by a splash screen detailing on the current version of the application which starts clicking on the application icon. As mentioned above Semicon is an open source less load with high optimization algorithm tool which doesn't take any user data or doesn't require any license or uneccessary sign up.
 
 **Landing Page**
 
-https://user-images.githubusercontent.com/65939087/226212014-dcdb6b2c-cf44-4222-a027-cbb37a6025c0.png
+![semicon-home](https://user-images.githubusercontent.com/65939087/226215991-7420f76e-d5a4-4cee-beb5-a851aa901bd1.png)
 
 ### The user is then guided to a home page after 3 seconds where two options are given for continuing the application. If the user has previous image files of the wafer for each incubation period the upload features dierctly seeks on the file from the user dierctory. Mutliple files with supported image files (.png, .jpg, .jpeg, .tif, .tiff) can be uploaded for examining on the Semicon. A scaling paramter is set for the image in order to fit the image inside the canvas.
 
@@ -34,7 +34,7 @@ https://user-images.githubusercontent.com/65939087/226212014-dcdb6b2c-cf44-4222-
 
 **Canvas Page**
 
-https://user-images.githubusercontent.com/65939087/226212018-5b627d85-d188-4c45-addc-b76a6e1745c1.png
+![semicon-canvas-1](https://user-images.githubusercontent.com/65939087/226215997-618d03d8-2b59-4c27-affc-89edc608011d.png)
 
 ### The Canvas is the main page where the user gives on the value for calculating the total optimization of the wafers by adjusing values and adding filters to the uploaded image or the live feed. On the left side of the page a  navigation rail of importants options are provided,
 
@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/65939087/226212018-5b627d85-d188-4c45-
 
 -------
 
-https://user-images.githubusercontent.com/65939087/226212021-dc863670-284a-4e60-88cd-cdf1de9e350b.png
+![semicon-canvas2](https://user-images.githubusercontent.com/65939087/226215999-45878b5f-e97e-4cc3-a8ee-09fb417ac648.png)
 
 ### The right side of the page contains the operations. Four tabs which highlights the main functionality of the application according to the options selected from throgh the navigation rail. The ADJUST and FILTER options just changes on the process part but remians the same for the rest of the tabs. When using the live feed The first tab changes to Camera settings where the user can adjst the basic parameters regulating the focus of the sensor. In the future versions, the list of supported cameras will be added an also a .cpf (camera parameter file) which is typically a XML file which carries all the general parameters for the camera being used for the live feed. 
 
@@ -52,17 +52,17 @@ https://user-images.githubusercontent.com/65939087/226212021-dc863670-284a-4e60-
 
 --------
 
-https://user-images.githubusercontent.com/65939087/226212020-7f6e883a-5202-4a60-b4b7-573e73bef456.png
+![semicon-canvas-3](https://user-images.githubusercontent.com/65939087/226216057-62d2cbb1-e2a8-4f36-a1f6-794e3fa9f88f.png)
 
 ### After regulating the values for the processing part, the user can now add methods for optimization focusing on any linear and non-linear function. With the Semicon application, the Avrami function is coming as an addon and if the user wishes to use the calculated values with other optimization methods, they can add the same as an XML file with certian order of variables to be used. Then that XML needs to be added to the application by clicking on the ADD_METHOD button. Once the method is added to the list of ANALYSIS tab, click on ACTIVATE.
 
-https://user-images.githubusercontent.com/65939087/226212025-75fce387-0cdc-49b4-87cf-5565016fd110.png
+![semicon-canvas-4](https://user-images.githubusercontent.com/65939087/226216064-8f6b2bd2-f995-4fa1-ab2c-42df2e80ca5c.png)
 
 ### Once activated, the necessary labels and data are found in the MATHS tab, where the user can even regulate the values and work out on the optimization part. Finally, they're able to save the method, and Semicon binds up the whole data into zip file which includes the method, plots and log files.
 
 > Note: By changing the processing values in the MATHS tab, doesn't make any make changes in the PROCESS tab. You have to make the same under the PROCESS tab if any changes needed which in turn deactivates the optimization method activated which will be sorted out in the future updates.
 
-https://user-images.githubusercontent.com/65939087/226213991-e719ef68-9003-4d0b-bd6e-4a39283b53fb.png
+![semicon-canvas-5](https://user-images.githubusercontent.com/65939087/226216071-69affdfb-fe39-4594-bf88-9a355b88dbaf.png)
 
 ### In the top portion, an app bar with a pop button is there to help on adding, saving, exporting new files and also completing exiting the app. Future updates will make on with application update and method package addition features.
 
